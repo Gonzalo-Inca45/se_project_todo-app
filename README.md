@@ -20,4 +20,4 @@ A simple and elegant Todo App built using vanilla JavaScript, modular ES6+ class
 
 Link:
 
-git@github.com:Gonzalo-Inca45/se_project_todo-app.git
+https://gonzalo-inca45.github.io/se_project_todo-app/
