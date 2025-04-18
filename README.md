@@ -1,17 +1,21 @@
-# Simple Todo App
+# 📝 Simple Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+A simple and elegant Todo App built using vanilla JavaScript, modular ES6+ classes, and client-side form validation. This app allows users to add, view, and manage tasks with optional due dates.
 
-## Functionality
+## 📌 Features
 
-Give a more detailed explanation of the project and its functionality.
+- Add todos with a name and due date.
+- Todos display with a formatted due date.
+- Mark todos as completed with checkboxes.
+- Remove todos from the list.
+- Form validation for required fields and proper input.
+- Popup modal for adding new todos.
 
-## Technology
+## 🛠️ Technologies Used
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
-
-## Deployment
-
-This project is deployed on GitHub Pages:
+- **JavaScript (ES6+)** — Modular code structure using classes.
+- **HTML5/CSS3** — Semantic markup and styled components.
+- **UUID** — Unique identifier generation for each todo using [jspm.dev/uuid](https://jspm.dev/uuid).
+- **Form Validation** — Custom form validation logic without third-party libraries.
 
 - ADD LINK HERE
