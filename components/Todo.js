@@ -55,14 +55,6 @@ class Todo {
     });
   }
 
-  generateCheckBoxEl() {
-    this._todoCheckboxEl = this._todoElement.querySelector(".todo__completed");
-    this._todoLabel = this._todoElement.querySelector(".todo__label");
-    this._todoCheckboxEl.checked = this._completed;
-    this._todoCheckboxEl.id = `todo-${this._id}`;
-    this._todoLabel.setAttribute("for", `todo-${this._id}`);
-  }
-
   getView() {
     this._todoElement = this._getTemplate();
     this._deleteBtnEl = this._todoElement.querySelector(".todo__delete-btn");
