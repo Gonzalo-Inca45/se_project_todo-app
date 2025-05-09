@@ -55,23 +55,33 @@ const generateTodo = (data) => {
   return todoElement;
 };
 
+const renderTodo = (todoData) => {
+  const todoElement = generateTodo(todoData);
+  todosList.append(todoElement);
+  todoCounter.updateTotal(1);
+  if (todoData.completed) {
+    todoCounter.updateCompleted(1);
+  }
+  return todoElement;
+};
+
 const section = new Section({
   items: initialTodos,
   renderer: (item) => {
     const todoElement = generateTodo(item);
     section.addItem(todoElement);
+    todoCounter.updateTotal(1);
+    if (item.completed) {
+      todoCounter.updateCompleted(1);
+    }
   },
   containerSelector: ".todos__list",
 });
 
 section.renderItems();
 
-const renderTodo = (todoData) => {
-  const todoElement = generateTodo(todoData);
-  todosList.append(todoElement);
-};
-
 addTodoButton.addEventListener("click", () => {
+  console.log("Button clicked");
   addTodoPopup.open();
 });
 
