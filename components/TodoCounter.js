@@ -16,7 +16,7 @@ class TodoCounter {
   }
 
   _updateText() {
-    this._counterElement.textContent = `${this._completed}/${this._total} Completed`;
+    this._counterElement.textContent = `Showing ${this._completed} out of ${this._total} Completed`;
   }
 }
 
