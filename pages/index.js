@@ -25,8 +25,6 @@ const addTodoPopup = new PopupWithForm({
       completed: false,
     };
     renderTodo(values);
-    // update count
-    todoCounter.updateTotal(1);
     newTodoValidator.resetValidation();
     addTodoPopup.close();
   },
@@ -56,7 +54,7 @@ const generateTodo = (data) => {
 };
 
 const renderTodo = (todoData) => {
-  section.renderer(todoData);
+  section._renderer(todoData);
 };
 
 const section = new Section({
