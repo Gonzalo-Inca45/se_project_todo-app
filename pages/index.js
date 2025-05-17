@@ -54,7 +54,7 @@ const generateTodo = (data) => {
 };
 
 const renderTodo = (todoData) => {
-  section._renderer(todoData);
+  section.renderer(todoData);
 };
 
 const section = new Section({
